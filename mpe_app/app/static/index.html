@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan d'affaires MPE – Générateur</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="entete-in">
+    <p class="surtitre">Projet C2D Emploi des Jeunes – Phase 3 – Cohorte 2</p>
+    <h1>Générateur de plan d'affaires MPE</h1>
+  </div>
+  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progression"><div id="barre"></div></div>
+</header>
+<nav id="etapes" class="etapes" aria-label="Étapes"></nav>
+<div class="mise-en-page">
+  <main id="contenu" tabindex="-1"></main>
+  <aside class="recap" aria-live="polite">
+    <h2>Récapitulatif</h2>
+    <dl id="recap"><dt>Saisissez vos montants pour voir le récapitulatif.</dt></dl>
+    <div class="outils">
+      <button type="button" class="btn sec" id="exporter">Exporter mes réponses</button>
+      <label class="btn sec" for="importer">Importer mes réponses</label>
+      <input type="file" id="importer" accept="application/json,.json" hidden>
+      <button type="button" class="btn lien" id="effacer">Tout effacer</button>
+    </div>
+    <p class="note">Vos réponses restent sur votre appareil. Rien n'est enregistré sur le serveur.</p>
+  </aside>
+</div>
+<footer class="pied">Outil indépendant d'aide à la rédaction. Ce n'est pas un site officiel du projet.</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: plan-affaires-mpe
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
